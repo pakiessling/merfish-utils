@@ -15,3 +15,6 @@ Double click .bat and paste folder path for upload.
 Make sure the watchdog package is installed.
 
 As long as the example .py is running it will monitor the configured directory for the creation of ```EXPERIMENT_FINISHED``` and ```MERLIN_FINISHED```, which indicate the end of the Merscope experiment and Merscope analysis respectively.
+
+## Metadata upload example
+Uploads supplied Metadata to Coscine, our S3 storage server
