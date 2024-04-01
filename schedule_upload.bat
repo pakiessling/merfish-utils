@@ -13,7 +13,6 @@ SET rawfilename=%path%log-%datestr%_raw.txt
 
 echo =========== LOG FILE %datestr% =========== >> %outputfilename%
 
-cd C:\software\rclone-v1.62.2-windows-amd64
 rclone move Z:\merfish_output merfish_output:/32f10225-14ab-4283-b557-d54e8fc96ac3/ -P --s3-upload-cutoff 200M --s3-chunk-size 64M --fast-list  --transfers 8 --checkers 16 --retries-sleep 300s --log-level INFO --min-age 6h  --delete-empty-src-dirs >> %outputfilename%
 
 echo =========== OUTPUT SCRIPT FINISHED CHECK FOR ERRORS ABOVE ============== >> %outputfilename%
