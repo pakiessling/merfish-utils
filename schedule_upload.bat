@@ -19,6 +19,6 @@ echo =========== OUTPUT SCRIPT FINISHED CHECK FOR ERRORS ABOVE ============== >>
 
 echo ===========  LOG FILE %datestr% =========== >> %rawfilename%
 
-rclone copy Z:\merfish_raw_data merfish_raw:/41a929c3-89fd-4272-a828-4290bfc43f0b/ -P --s3-upload-cutoff 200M --s3-chunk-size 64M --fast-list  --transfers 8 --checkers 16 --retries-sleep 60s --log-level INFO >> %rawfilename%
+rclone copy Z:\merfish_raw_data merfish_raw:/41a929c3-89fd-4272-a828-4290bfc43f0b/ -P --s3-upload-cutoff 200M --s3-chunk-size 64M --fast-list  --transfers 8 --checkers 16 --retries-sleep 300s --log-level INFO >> %rawfilename%
 
 echo =========== RAW SCRIPT FINISHED CHECK FOR ERRORS ABOVE ============== >>  %rawfilename%
